@@ -6,8 +6,3 @@ h2 {
   margin: 0;
   padding: 0;
 }
-
-h1::before {
-  content: "🚀";
-  margin-right: 10px;
-}
