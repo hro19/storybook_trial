@@ -1,0 +1,12 @@
+.storybook-buttonInLow {
+  display: flex;
+}
+
+.storybook-buttonInLow--normal {
+  justify-content: start;
+}
+
+
+.storybook-buttonInLow--center {
+  justify-content: center;
+}
