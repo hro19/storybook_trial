@@ -37,3 +37,27 @@ export const Small = {
     label: 'Button',
   },
 };
+
+export const Success = {
+  args: {
+    primary: true,
+    label: 'Button',
+    backgroundColor: '#3dc361',
+  },
+};
+
+export const Warning = {
+  args: {
+    primary: true,
+    label: 'Button',
+    backgroundColor: '#f87515',
+  },
+};
+
+export const Danger = {
+  args: {
+    primary: true,
+    label: 'Button',
+    backgroundColor: '#eb4234',
+  },
+};
