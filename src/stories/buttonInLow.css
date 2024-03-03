@@ -1,5 +1,6 @@
 .storybook-buttonInLow {
   display: flex;
+  gap: 10px;
 }
 
 .storybook-buttonInLow--normal {
