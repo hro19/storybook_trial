@@ -59,5 +59,6 @@ export const Danger = {
     primary: true,
     label: 'Button',
     backgroundColor: '#eb4234',
+    fontWeight: 'bold',
   },
 };

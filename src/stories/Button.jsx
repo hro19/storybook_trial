@@ -5,12 +5,13 @@ import "./button.css";
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
+export const Button = ({ primary, backgroundColor, size, label,fontWeight, ...props }) => {
   const mode = primary ? "storybook-button--primary" : "storybook-button--secondary";
+  const fontWeightStyle = fontWeight === "bold" ? "storybook-button--bold" : "";
   return (
     <button
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
+      className={['storybook-button', `storybook-button--${size}`, mode,fontWeightStyle].join(' ')}
       style={backgroundColor && { backgroundColor }}
       {...props}
     >
@@ -36,6 +37,7 @@ Button.propTypes = {
    * Button contents
    */
   label: PropTypes.string.isRequired,
+  fontWeight: PropTypes.oneOf(["normal", "bold"]),
   /**
    * Optional click handler
    */
@@ -46,5 +48,6 @@ Button.defaultProps = {
   backgroundColor: null,
   primary: false,
   size: "medium",
+  fontWeight: "normal",
   onClick: undefined,
 };
