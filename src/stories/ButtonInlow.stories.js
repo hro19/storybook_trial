@@ -20,3 +20,9 @@ export const Flex_center = {
     justifyContent: 'center',
   },
 };
+
+export const Flex_right = {
+  args: {
+    justifyContent: 'end',
+  },
+};
